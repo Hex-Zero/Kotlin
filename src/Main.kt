@@ -1,3 +1,4 @@
-fun main(){
-    println("Hey")
+fun main() {
+    val name: String = "Ace"
+    println(name)
 }
