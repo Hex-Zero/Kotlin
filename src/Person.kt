@@ -8,4 +8,7 @@ class Person(val firstName: String = "Ilona",val lastName: String = "Aldrich") {
         println("the return value is $field")
         return field
     }
+    fun printInfo(){
+        println("$firstName ( $nickName ) $lastName")
+    }
 }

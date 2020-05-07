@@ -7,4 +7,5 @@ fun main() {
     val person = Person()
     person.lastName
     person.nickName = "Lala"
+    person.printInfo()
 }
