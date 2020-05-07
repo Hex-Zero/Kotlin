@@ -1,14 +1,7 @@
-class Person(val firstName: String = "Ilona",val lastName: String = "Aldrich") {
-    var nickName: String = "Lalala"
-    set(value){
-        field = value
-        println("the new nickname is $value")
-    }
-    get(){
-        println("the return value is $field")
-        return field
-    }
+class Person(val firstName: String = "Ilona",var nickName: String? = null, val lastName: String = "Aldrich") {
+
     fun printInfo(){
-        println("$firstName ( $nickName ) $lastName")
+        val nickNameToPrint = nickName ?: "---"
+        println("$firstName ( $nickNameToPrint ) $lastName")
     }
 }
