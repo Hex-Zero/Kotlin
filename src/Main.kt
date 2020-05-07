@@ -1,7 +1,7 @@
 
 
-var name = "Ace"
-fun sayHello( name: String ) = print("Hello $name")
+var names = arrayOf("Ace","Ilona")
+fun sayHello( name: String ) = print("Hello $name\n")
 fun main() {
-    sayHello(name)
+    names.forEach { it: String -> sayHello(it) }
 }
