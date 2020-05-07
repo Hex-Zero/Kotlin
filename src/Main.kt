@@ -1,4 +1,4 @@
 fun main() {
-    val name: String = "Ace"
+    val name: String? = null
     println(name)
 }
