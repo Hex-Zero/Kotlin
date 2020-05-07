@@ -1,4 +1,10 @@
+
+
+var name = "Ace"
+
 fun main() {
-    val name: String? = null
-    println(name)
+    when(name){
+        "Ace" -> println("Ace Aldrich")
+        else -> println("Someone else")
+    }
 }
