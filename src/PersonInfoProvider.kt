@@ -1,9 +1,14 @@
 interface PersonInfoProvider {
-    fun printInfo(person: Person)
+    val  providerInfo : String
+    fun printInfo(person: Person) {
+        println(providerInfo)
+        person.printInfo()
+    }
 }
-class BasicProvider : PersonInfoProvider {
+class BasicProvider(override val providerInfo: String = "BasicInfoProvider") : PersonInfoProvider {
     override fun printInfo(person: Person) {
-       println("Print info")
+        super.printInfo(person)
+        println("additional print statement")
     }
 }
 fun main(){
